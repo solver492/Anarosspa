@@ -4,7 +4,7 @@ services:
     name: anaros-spa
     env: node
     plan: free
-    buildCommand: bash ./build.sh
+    buildCommand: npm install && npm run build
     startCommand: npm start
     healthCheckPath: /api/health
     
@@ -15,11 +15,11 @@ services:
       - key: PORT
         value: 10000
     
-    # Configuration du build
+    # Configuration du build - IMPORTANT: buildContext doit être à la racine
     buildContext: .
     
     # Configuration des dépendances
-    nodeVersion: 20
+    nodeVersion: 22
     
     # Configuration du domaine (optionnel)
     # domains:
