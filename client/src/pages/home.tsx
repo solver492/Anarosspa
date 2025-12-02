@@ -873,7 +873,7 @@ function AboutView() {
               Un Rêve de Beauté et de Sérénité
             </motion.h4>
             <motion.p variants={fadeInUp} className="text-stone-600 text-lg leading-loose mb-6">
-              Fondé en 2022, Anaros est né de la vision d'offrir un lieu unique où l'excellence du service rencontre le luxe discret. Notre mission est simple : fournir des prestations de haute qualité, dans un environnement où le bien-être est la priorité absolue.
+              Fondé en avril 2018, Anaros est né de la vision d'offrir un lieu unique où l'excellence du service rencontre le luxe discret. Notre mission est simple : fournir des prestations de haute qualité, dans un environnement où le bien-être est la priorité absolue.
             </motion.p>
             <motion.p variants={fadeInUp} className="text-stone-600 leading-relaxed mb-8">
               Nous sommes fiers d'être devenus une référence en matière de beauté et de soins en Algérie.
