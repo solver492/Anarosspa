@@ -3,21 +3,30 @@ import fs from "fs";
 import path from "path";
 
 export function serveStatic(app: Express) {
-  // Resolve the dist directory relative to the project root
-  // In production, dist is at the root level (not in src/)
-  const projectRoot = path.resolve(process.cwd());
-  const distPath = path.join(projectRoot, "dist", "public");
+  // The dist directory is at the project root
+  // Try multiple possible paths since the working directory varies
+  const possiblePaths = [
+    path.resolve(process.cwd(), "dist", "public"),
+    path.resolve(process.cwd(), "..", "dist", "public"),
+    "/opt/render/project/dist/public",
+  ];
   
-  console.log(`[serveStatic] Looking for dist at: ${distPath}`);
-  console.log(`[serveStatic] Current working directory: ${process.cwd()}`);
-  console.log(`[serveStatic] Directory exists: ${fs.existsSync(distPath)}`);
+  let distPath = "";
+  for (const p of possiblePaths) {
+    console.log(`[serveStatic] Checking: ${p} - exists: ${fs.existsSync(p)}`);
+    if (fs.existsSync(p)) {
+      distPath = p;
+      break;
+    }
+  }
   
-  if (!fs.existsSync(distPath)) {
+  if (!distPath) {
     throw new Error(
-      `Could not find the build directory: ${distPath}, make sure to build the client first`,
+      `Could not find the build directory. Tried: ${possiblePaths.join(", ")}`,
     );
   }
 
+  console.log(`[serveStatic] Using dist path: ${distPath}`);
   app.use(express.static(distPath));
 
   // fall through to index.html if the file doesn't exist
