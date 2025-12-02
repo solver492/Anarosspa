@@ -4,7 +4,7 @@ services:
     name: anaros-spa
     env: node
     plan: free
-    buildCommand: bash build.sh
+    buildCommand: bash ./build.sh
     startCommand: npm start
     healthCheckPath: /api/health
     

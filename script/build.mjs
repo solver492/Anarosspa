@@ -1,14 +1,26 @@
 import { fileURLToPath, pathToFileURL } from "url";
 import { dirname, resolve } from "path";
-import { rm, readFile } from "fs/promises";
+import { rm, readFile, access } from "fs/promises";
+import { existsSync } from "fs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const projectRoot = resolve(__dirname, "..");
+
+// Detect project root - handle both /project and /project/src scenarios
+let projectRoot = resolve(__dirname, "..");
+if (!existsSync(resolve(projectRoot, "node_modules"))) {
+  projectRoot = resolve(projectRoot, "..");
+}
+
+console.log(`[build] Project root: ${projectRoot}`);
+console.log(`[build] Node modules path: ${resolve(projectRoot, "node_modules")}`);
 
 // Dynamically import esbuild and vite to handle different working directories
 const esbuildPath = pathToFileURL(resolve(projectRoot, "node_modules/esbuild/lib/main.js")).href;
 const vitePath = pathToFileURL(resolve(projectRoot, "node_modules/vite/dist/node/index.js")).href;
+
+console.log(`[build] Importing esbuild from: ${esbuildPath}`);
+console.log(`[build] Importing vite from: ${vitePath}`);
 
 const esbuildModule = await import(esbuildPath);
 const viteModule = await import(vitePath);
