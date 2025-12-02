@@ -1,6 +1,20 @@
-import { build as esbuild } from "../node_modules/esbuild/lib/main.js";
-import { build as viteBuild } from "../node_modules/vite/dist/node/index.js";
+import { fileURLToPath, pathToFileURL } from "url";
+import { dirname, resolve } from "path";
 import { rm, readFile } from "fs/promises";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const projectRoot = resolve(__dirname, "..");
+
+// Dynamically import esbuild and vite to handle different working directories
+const esbuildPath = pathToFileURL(resolve(projectRoot, "node_modules/esbuild/lib/main.js")).href;
+const vitePath = pathToFileURL(resolve(projectRoot, "node_modules/vite/dist/node/index.js")).href;
+
+const esbuildModule = await import(esbuildPath);
+const viteModule = await import(vitePath);
+
+const esbuild = esbuildModule.build;
+const viteBuild = viteModule.build;
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
