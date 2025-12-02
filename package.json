@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsx server/index.ts",
-    "build": "node ./script/build.mjs",
+    "build": "node ./script/build-wrapper.mjs",
     "start": "node dist/index.cjs",
     "check": "tsc",
     "db:push": "drizzle-kit push",
