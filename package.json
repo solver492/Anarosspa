@@ -9,6 +9,7 @@
     "start": "npm run build && node dist/index.cjs",
     "check": "tsc",
     "db:push": "drizzle-kit push",
+    "postinstall": "npm run build",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
