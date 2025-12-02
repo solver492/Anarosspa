@@ -97,14 +97,17 @@ const services = [
 ];
 
 const galleryImages = [
-  "https://images.unsplash.com/photo-1593083161623-a808064a34b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-  "https://images.unsplash.com/photo-1540759786499-d49d37529d20?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-  "https://images.unsplash.com/photo-1627883907409-7221d6006f89?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-  "https://images.unsplash.com/photo-1558509709-a035e07664f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-  "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-  "https://images.unsplash.com/photo-1596700889278-f2b71d6f1c4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-  "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwBjdptOS-x1r2ewMBm4N4oi1Zp1XYqTF9JoYt5SNU1O4BpbaOwhvKBrHaIEpUO3W04N951rkHlAga99YuSVCCsVRjXQ3CkjOmbv5zOPyn5JWbxomHBVlKTqNiUVTsq1HikBlZkc7EUGCk=s680-w680-h510-rw",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwJU3ha3bEdXoHRhffCnER_sdomUjw3bovcTcDVNkideOX8JXmBmIPtJ-l3q-_p9C-6i25rE35-2QMxllxoalhneZsieuRauYHI-Qq1gcpC3nq9hw5vptowbCZS_D6-Vd3ugGVU=s680-w680-h510-rw",
+  "https://lh3.googleusercontent.com/p/AF1QipPD4p7euESqNrvSRjR9BVSpc71lBQpborYMOyIf=s680-w680-h510-rw",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSznz7G9wJLMurwW9eDLRZrEj9roRPzYLB0AAqRtBFwANRmG1t9cUuVic3s4_OSeCJlqOaRS4ODz9t2zNvFc4NrpAi5b3WHWw7Yb77n4YJN6riumFac16at2WqTse8Y4L_o9jeKp=s680-w680-h510-rw",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwdIjumssSPjnsoaA66uqrQAdUJiH46O1Gko_9zPNLA6IluJr9VMNvbf8iG15aigjQUr14gpr-pfbiQPC7OP8eDQxHp2gID_uKvxJkFkScSiuaSfKxYARxmwYIR8cAO6CQ9Fx-WqKab0nAC=w141-h176-n-k-no-nu",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxCKLeyRjzTF1znRouOjN9cenHF6nZxfHuR3PZIQqIN_3GCN2rTT54sKVFk_7_oF4DB638qUfs6E54pTJffy7oVHkFb1Z2e-Bu1j2UBlG5eE4-HGOyQtHIzEffTECmhIbe7olMl_g=s680-w680-h510-rw",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSyBlnZRsKg7cSHf-iAEn21vdeF2vHj2XOAo7wJZWqkX6-EhKXjXIFJ441V1wd_JibK1faBmZ6qFwTDDLtsOEscJkrKRMD_572hXHzwELcCJ_h7lcUjq1BATmzIyHD63dlxnBOdx=w141-h235-n-k-no-nu",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSycjWgYCqe64WIdSrFRQyvO-ZfIeR7as6hxPvkYxBCUjBMKpeI8sHmouAmcieX4uGVs_BzDHlb5u098tTRwyyqlBUZoCWipQYhsMetBkFs5eLQYMgfwMj0wC9jjcBPFpNCP2bMN_A=s680-w680-h510-rw",
+  "https://lh3.googleusercontent.com/p/AF1QipOGKTSSijai-YU4AQb4KdYK3inA2oIkH0NmWdj9=s680-w680-h510-rw",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwZv3dHr0_CvGHqElI7ZqBbikWPqyCnL3_iQZlMl3FttrZmSmvVZXQcL46ktqGkavIsaqvZ1Rxp_y8qrt8nxiqL8YDulw3KYhVQDVTLpG7Ve6uswE0ncIGH6IYhdfL3lTXLvAU=s680-w680-h510-rw",
+  "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx3w68hDMc2YKIkg_d23lBytew43HdBBTNcCHoeaXYKF0Xoi8bCHJ0P0x_VbGel1UzWGlc3kDhbgzCwKlS0an3xj_yLSl2UUsXzbOS6C4e-rjruVGL2uXWFv8sBXXLfFp573vUd=s680-w680-h510-rw",
 ];
 
 const newsArticles = [
@@ -974,6 +977,24 @@ function ContactView() {
                   <Instagram className="w-5 h-5" />
                   @anaros_beautylounge
                 </a>
+              </div>
+
+              {/* Google Maps */}
+              <div className="mt-8 pt-6 border-t border-stone-200">
+                <h5 className="font-medium text-stone-800 mb-4">Nous Trouver</h5>
+                <div className="rounded-lg overflow-hidden shadow-md">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d799.1762157391818!2d2.9949676999999997!3d36.7536547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb1bb86fbd45d%3A0x5e401253e70e89f5!2sANAROS%20Institut!5e0!3m2!1sfr!2sfr!4v1764664761790!5m2!1sfr!2sfr" 
+                    width="100%" 
+                    height="250" 
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Localisation ANAROS Institut sur Google Maps"
+                    data-testid="map-google-embed"
+                  />
+                </div>
               </div>
             </Card>
           </motion.div>
