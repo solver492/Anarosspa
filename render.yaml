@@ -1,0 +1,40 @@
+services:
+  # Web Service
+  - type: web
+    name: anaros-spa
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    
+    # Variables d'environnement
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    
+    # Configuration du build
+    buildContext: .
+    
+    # Configuration des dépendances
+    nodeVersion: 20
+    
+    # Configuration du domaine (optionnel)
+    # domains:
+    #   - your-domain.com
+
+databases:
+  # Base de données PostgreSQL
+  - name: anaros-db
+    databaseName: anaros_spa
+    user: anaros_user
+    plan: free
+    ipAllowList: []  # Autorise toutes les connexions
+
+# Configuration pour le stockage des fichiers (optionnel)
+# disks:
+#   - name: uploads
+#     mountPath: /app/uploads
+#     sizeGB: 1
